@@ -1,5 +1,5 @@
 {
-  "name": "react-offline-support",
+  "name": "react-offline-support-kit",
   "version": "1.0.0",
   "description": "A library that helps developers add offline support to React.js/Next.js applications.",
   "type": "module",
