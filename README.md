@@ -17,6 +17,8 @@ Usage
 
 React Usage:
 
+```bash
+
 // Import the store and action creators
 import { store, addToQueue, removeFromQueue } from "react-offline-support";
 
@@ -24,24 +26,27 @@ import { store, addToQueue, removeFromQueue } from "react-offline-support";
 store.dispatch(addToQueue({ type: "ADD_TODO", payload: "Test todo" }));
 store.dispatch(removeFromQueue());
 
+```
+
+
 2. Higher-Order Component (HOC)
 
    The WithOfflineSupport Higher-Order Component (HOC) adds offline support to React components, enabling them to synchronize data when the network connection is restored.
 
 React Usage:
-
+```bash
 // Import the HOC
 import withOfflineSupport from "react-offline-support";
 
 // Wrap your component with the HOC
 const OfflineComponent = withOfflineSupport(MyComponent);
-
+```
 Example
 
 Here's a basic example of using the package:
 
 React.js Usage:
-
+```bash
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
@@ -63,3 +68,4 @@ ReactDOM.render(
 </Provider>,
 document.getElementById("root")
 );
+```
